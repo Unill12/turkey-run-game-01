@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turkey Run — Escape the Farmer</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #2b1a08;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #ffe9b0;
+  }
+  #wrap {
+    width: min(960px, 96vw);
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 4px solid #5d3a1a;
+    border-radius: 10px;
+    background: #7da95c;
+    cursor: pointer;
+    touch-action: none;
+  }
+  #below {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 2px 0;
+    font-size: 14px;
+  }
+  #below a { color: #ffb347; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="below">
+    <span>Turkey Run — a turkey escapes the farmer, the oven and the carving knife.</span>
+    <span id="mute-note">Sound: on (M)</span>
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
